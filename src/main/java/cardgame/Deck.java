@@ -3,8 +3,8 @@ package main.java.cardgame;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Deck<T> {
-   private ArrayList<T> deck = new ArrayList<T>();
+public class Deck<T extends Card> {
+   private ArrayList<T> deck = new ArrayList<>();
    public Deck() {}
    public Deck(ArrayList<T> deck) {
        this.deck = deck;
